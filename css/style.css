@@ -1,0 +1,170 @@
+
+/* reset css */
+html {
+    box-sizing: border-box;
+    font-size: 16px;}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+}
+/* reset css  end*/
+
+body {
+    overflow-x: hidden;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    background-image: url("/img/bg_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    position: relative;
+    background: linear-gradient(180deg, rgba(33, 0, 38, 0) 70%, #210026 95%), url('/img/zeus-img2.png')  center/ 100% no-repeat ;
+    background-size: 878px 777px;
+    background-position: right;
+}
+
+.container{
+    max-width: 1235px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.img-logo {
+    padding-top: 63px;
+    margin-bottom: 70px;
+}
+
+.title {
+    width: 50%;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 69px;
+
+    color: #FFFFFF;
+}
+
+.btn {
+    margin-top: 87px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 45px;
+
+}
+
+.link-text {
+    padding: 28px 113px;
+    background: linear-gradient(95.75deg, #E64CFF 9.27%, #970FAD 89.1%);
+    box-shadow: 0px 4px 0px #1E1E1E, 0px 25px 25px -20px rgba(230, 76, 255, 0.5);
+    border-radius: 20px;
+    color: #FFFFFF
+}
+
+.paymets-wrapper {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+    padding-bottom: 86px;
+}
+
+.img-blic {
+    position: absolute;
+    top: 0;
+    animation: img_blic 3s linear infinite;
+}
+
+@keyframes img_blic {
+    0% {
+        transform: translateX(10px);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+}
+
+footer {
+    background: #210026;
+}
+
+.footer-text {
+    padding: 60px 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+
+    color: #747AA8;
+}
+
+
+/* ADAP */
+
+@media (max-width: 768px) {
+    main {
+        background: linear-gradient(180deg, rgba(33, 0, 38, 0) 85%, #210026 100%), url('/img/zeus-img2.png')  center/ 100% no-repeat ;
+        background-size: 374px 346px;
+        background-position: bottom;
+        padding-bottom: 290px;
+        background-size: 100%;
+    }
+
+
+    .img-logo {
+        margin-bottom: 40px;
+    }
+
+    .logo-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .title {
+        width: 100%;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 37px;
+        text-align: center;
+    }
+
+    .btn {
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .paymets-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 90px;
+        padding-bottom: 86px;
+    }
+}
+
